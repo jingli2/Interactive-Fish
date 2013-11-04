@@ -24,12 +24,4 @@ Hi, 鱼和背景画好了！
 2.Mesh 里有 readFromFile("filename") 这个filename有五种，ChineseFish.stl, lotusAndBuds.stl读的是什么，就会画什么。
   文件路径需要改成你的电脑你的stl文件的路径。
 3.仔细看main里面画鱼的方法。
-  //You can draw a fish use the code below
-        double x=400.0;
-        double y=300.0;
-        double theta=30.0*YsPi/180.0;//theta is in radian
-        Mesh blackFish(x,y,theta,0);//0 means a black , 1 means a red ,2 means gray
-        blackFish.ReadFromFile("/Users/jingli/Documents/CMUcourse/2013Fall/24-780/fish/ChineseFish.stl");
-        blackFish.Draw();
-        
 
