@@ -20,8 +20,11 @@ A projecting drawing of fish which is interactive to people's behavior.
 
 
 Hi, 鱼和背景画好了！
+
 1.我只写了一个cpp文件 drawfish2d.cpp里面包含了StringParser Mesh 等等类。Mesh 就是所画的图形。
+
 2.Mesh 里有 readFromFile("filename") 这个filename有五种，ChineseFish.stl, lotusAndBuds.stl读的是什么，就会画什么。
   文件路径需要改成你的电脑你的stl文件的路径。
+  
 3.仔细看main里面画鱼的方法。
 
