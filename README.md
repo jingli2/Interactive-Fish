@@ -17,3 +17,19 @@ A projecting drawing of fish which is interactive to people's behavior.
 张洋--Kinect代替鼠标，组装，调试
 
 需要统一的变量： 鱼是一个类。成员变量中的 X, Y, Angle 记录一条鱼当前在屏幕中的位置以及鱼头的方向。
+
+
+Hi, 鱼和背景画好了！
+1.我只写了一个cpp文件 drawfish2d.cpp里面包含了StringParser Mesh 等等类。Mesh 就是所画的图形。
+2.Mesh 里有 readFromFile("filename") 这个filename有五种，ChineseFish.stl, lotusAndBuds.stl读的是什么，就会画什么。
+  文件路径需要改成你的电脑你的stl文件的路径。
+3.仔细看main里面画鱼的方法。
+  //You can draw a fish use the code below
+        double x=400.0;
+        double y=300.0;
+        double theta=30.0*YsPi/180.0;//theta is in radian
+        Mesh blackFish(x,y,theta,0);//0 means a black , 1 means a red ,2 means gray
+        blackFish.ReadFromFile("/Users/jingli/Documents/CMUcourse/2013Fall/24-780/fish/ChineseFish.stl");
+        blackFish.Draw();
+        
+
